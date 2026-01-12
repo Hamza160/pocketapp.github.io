@@ -1,35 +1,33 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import {Icon, Label, NativeTabs} from "expo-router/unstable-native-tabs";
+import {Platform} from "react-native";
+import {COLORS} from "@/utils/Colors";
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+export default function RootLayout() {
+    return (
+        <NativeTabs blurEffect="systemChromeMaterial" tintColor={COLORS.textDark}>
+            <NativeTabs.Trigger name="home">
+                <Label>Home</Label>
+                <Icon
+                    sf={{default: "house", selected: "house.fill"}}
+                    drawable={Platform.OS === "android" ? "ic_menu_home" : undefined} // Use built-in Android icon
+                />
+            </NativeTabs.Trigger>
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+            <NativeTabs.Trigger name="saves">
+                <Label>Saves</Label>
+                <Icon
+                    sf={{default: "heart", selected: "heart.fill"}}
+                    drawable={Platform.OS === "android" ? "ic_menu_preferences" : undefined} // Use built-in Android icon
+                />
+            </NativeTabs.Trigger>
 
-  return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
-    </Tabs>
-  );
+            <NativeTabs.Trigger name="settings">
+                <Label>Settings</Label>
+                <Icon
+                    sf={{default: "gearshape", selected: "gearshape.fill"}}
+                    drawable={Platform.OS === "android" ? "ic_menu_preferences" : undefined} // Use built-in Android icon
+                />
+            </NativeTabs.Trigger>
+        </NativeTabs>
+    );
 }
