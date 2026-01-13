@@ -5,33 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce4a5f-3f83-4443-8a3e-3e39a6a34f13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/home/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/settings/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/settings/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/Colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Development.md" beforeDir="false" afterPath="$PROJECT_DIR$/Development.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/explore.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon-mono.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pocket-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/external-link.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/haptic-tab.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hello-wave.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/parallax-scroll-view.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/themed-text.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/themed-view.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/collapsible.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/icon-symbol.ios.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/icon-symbol.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/theme.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/use-color-scheme.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/use-color-scheme.web.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/use-theme-color.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/reset-project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HamzaAshraf160&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hamza160/pocketapp.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;ba847087-290c-4f71-a2f1-1cad21c371ef&quot;
+  }
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.4.2/bin/php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -59,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "last_opened_file_path": "/Users/hamzaashraf/Documents/MERN-DEVELOPMENT/ReactNative/Builds/PocketApp/app/settings",
+    "last_opened_file_path": "/Users/hamzaashraf/Documents/MERN-DEVELOPMENT/ReactNative/Builds/PocketApp/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,9 +63,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/settings" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(tabs)" />
       <recent name="$PROJECT_DIR$/app/settings" />
       <recent name="$PROJECT_DIR$/app/home" />
     </key>
@@ -95,6 +90,8 @@
       <updated>1768208304033</updated>
       <workItem from="1768208305227" duration="865000" />
       <workItem from="1768209181429" duration="1162000" />
+      <workItem from="1768225053656" duration="2988000" />
+      <workItem from="1768313167447" duration="2699000" />
     </task>
     <servers />
   </component>
