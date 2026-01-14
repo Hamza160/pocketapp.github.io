@@ -1,5 +1,7 @@
 import {Stack} from "expo-router";
 import {KeyboardProvider} from "react-native-keyboard-controller";
+import {ClerkProvider} from "@clerk/clerk-expo";
+import {tokenCache} from "@clerk/clerk-expo/token-cache";
 
 const Layout = () => {
     return <Stack>
@@ -10,9 +12,11 @@ const Layout = () => {
 
 const RootLayout = () => {
     return (
-        <KeyboardProvider>
-            <Layout/>
-        </KeyboardProvider>
+        <ClerkProvider tokenCache={tokenCache}>
+            <KeyboardProvider>
+                <Layout/>
+            </KeyboardProvider>
+        </ClerkProvider>
     )
 }
 

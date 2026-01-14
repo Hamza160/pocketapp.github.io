@@ -3,16 +3,18 @@ import {Link, Redirect} from "expo-router";
 import {KeyboardAvoidingView} from "react-native-keyboard-controller";
 import {COLORS} from "@/utils/Colors";
 import {AntDesign} from "@expo/vector-icons";
+import ExpoWebBrowser from "expo-web-browser/src/ExpoWebBrowser";
 
 export default function Index() {
     // return <Redirect href={'/(tabs)/saves'}/>;
-
+    const openLink = () => {
+        ExpoWebBrowser.openBrowser('https://glaxies.dev')
+    }
     const handleSocialSignIn = (provider: string) => {
     }
     return (
         <KeyboardAvoidingView
             behavior="padding"
-            keyboardVerticalOffset={400}
             style={styles.container}
         >
             <View style={styles.header}>
@@ -54,11 +56,22 @@ export default function Index() {
                 <TouchableOpacity style={styles.nextButton}>
                     <Text style={styles.nextButtonText}>Next</Text>
                 </TouchableOpacity>
-                <Link href={"/(tabs)/home"} asChild>
+                <Link href={"/(tabs)/home"} replace asChild>
                     <TouchableOpacity style={{marginTop: 16, alignSelf: "center"}}>
                         <Text style={{color: COLORS.secondary, fontWeight: "bold"}}>Skip for now</Text>
                     </TouchableOpacity>
                 </Link>
+            </View>
+            <View style={styles.footer}>
+                <Text style={styles.termsText}>
+                    By proceeding, you agree to: {'\n'}
+                    Pocket's {' '}
+                    <Text style={styles.link} onPress={openLink}>Terms of Service</Text> and {' '}
+                    <Text style={styles.link} onPress={openLink}>Privacy Notice</Text> and {' '}
+                    <Text>Mozilla Accounts</Text> and {' '}
+                    <Text style={styles.link} onPress={openLink}>Terms of Serice</Text> and {' '}
+                    <Text style={styles.link} onPress={openLink}>Privacy Notice</Text>
+                </Text>
             </View>
         </KeyboardAvoidingView>
     );
@@ -141,5 +154,26 @@ const styles = StyleSheet.create({
         color: COLORS.white,
         fontSize: 16,
         fontWeight: "bold",
+    },
+    footer: {
+        marginTop: 20,
+    },
+    termsText: {
+        fontSize: 12,
+        color: COLORS.textGray,
+        textAlign: "center",
+        lineHeight: 18,
+    },
+    link: {
+        color: COLORS.primary,
+        textDecorationLine: 'underline',
     }
+
 })
+
+
+
+
+
+
+
